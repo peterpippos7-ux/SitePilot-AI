@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest an improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What construction problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Suggested solution
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - RFI
+        - ITP / checklist
+        - Defects
+        - Site diary
+        - Trade actions
+        - Programme risks
+        - AI prompt builder
+        - Mobile UI
+        - Export / backup
+        - Other
